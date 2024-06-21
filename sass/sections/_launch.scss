@@ -1,0 +1,15 @@
+.launch-title {
+  grid-row: launch-title-top / launch-title-bottom;
+  grid-column: inner-left / inner-right;
+
+  @include section-title;
+  color: $color-grey-3;
+}
+
+.launch {
+  @include four-boxes-section;
+  grid-row: launch-top / launch-bottom;
+  
+  @include four-boxes-wrap;
+  margin-bottom: 10rem;
+}
