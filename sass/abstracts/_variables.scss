@@ -1,0 +1,72 @@
+// COLORS
+$color-yellow-1: #FFFDF0;
+$color-yellow-2: #FAF2CA;
+$color-yellow-3: #F0E7E7;
+
+$color-brown-2: #5C2005;
+$color-brown-3: #3d2510;
+
+$color-grey-1: #E3E3E3;
+$color-grey-2: #D9D9D9;
+$color-grey-3: #2B2A23;
+$color-grey-4: #1c1b17;
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+
+// FONTS
+$font-primary: 'Lato', sans-serif;
+
+
+
+$font-secondary-title-size: 4rem;
+$font-tertiary-title-size:  3rem;
+$font-tertiary-title-size-sm:  2.3rem;
+
+$font-paragraph-size: 1.8rem;
+$font-paragraph-size-sm: 1.6rem;
+$font-footer-size: 1.4rem;
+$font-footer-size-sm: 1.2rem;
+
+
+// DIMENSIONS
+// ----------
+// Grid: Full-screen dimensions
+$section-padding-top: 9rem;
+$section-padding-bottom: 10rem;
+$section-title-height: auto;
+$section-title-padding-bottom: 2rem;
+$full-width: 120rem;
+$inner-width: 114rem;
+$inner-width-desktop: 112rem;
+$inner-width-laptop: 80rem;
+$inner-width-tab-land: 55rem;
+$inner-width-tab-port: 60rem;
+$inner-width-phone-land: 30rem;
+$inner-width-phone: 29rem;
+
+// Navigation bar
+$navbar-height-lg: 10rem;
+$navbar-height-md: 6.3rem;
+$navbar-height-sm: 6rem;
+
+// FourBoxes: Full-screen dimensions
+$fourboxes-wrap-margin-y: 2rem;
+$fourboxes-wrap-margin-x: auto;
+
+
+// HowItWorks Section: Full-screen dimensions:
+$works-row-height: auto;
+// $works-row-height: 11rem; // Should be same size as smallsquare-size
+$works-smallsquare-size: 11rem;
+$works-smallsquare-size-tab-land: 2rem;
+
+
+// Text-Image box dimenstions:
+// $txtimg-rowheight: 35rem; // Text-Image frame row height
+$txtimg-rowheight: 50rem; // Text-Image frame row height
+$txtimg-txt-minw: 20rem;  // Text box minimum width
+$txtimg-img_minw: 20rem;  // Image box minimum width
+$txtimg-img_minh: 25rem;  // Image box minimum height
+

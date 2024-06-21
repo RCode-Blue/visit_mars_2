@@ -1,0 +1,69 @@
+.container {
+  display: grid;
+  grid-template-rows: [grid-top banner-top]
+    calc(100vh - 10rem) [banner-bottom feature-top] 
+    auto [feature-bottom works-title-top] 
+    $section-title-height [works-title-bottom works-top]
+    auto [works-bottom launch-title-top]
+    auto [launch-title-bottom launch-top]
+    auto [launch-bottom gallery-top]
+    auto [gallery-bottom visit-title-top]
+    auto [visit-title-bottom visit-top]
+    auto [visit-bottom contact-top]
+    auto [contact-bottom footer-top]
+    auto [footer-bottom grid-bottom];
+
+  
+  grid-template-columns: [far-left] 1fr [inner-left] 
+    auto [inner-right] 
+    1fr [far-right];
+
+    @include respond(desktop) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-desktop [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(laptop) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-laptop [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(tab-land) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-tab-land [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-tab-port [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(phone-land) {
+      grid-template-rows: [grid-top banner-top]
+      100vh [banner-bottom feature-top] 
+      auto [feature-bottom works-title-top] 
+      $section-title-height [works-title-bottom works-top]
+      auto [works-bottom launch-title-top]
+      auto [launch-title-bottom launch-top]
+      auto [launch-bottom gallery-top]
+      auto [gallery-bottom visit-title-top]
+      auto [visit-title-bottom visit-top]
+      auto [visit-bottom contact-top]
+      auto [contact-bottom footer-top]
+      auto [footer-bottom grid-bottom];
+
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-phone-land [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(phone) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-phone [inner-right] 
+        1fr [far-right];
+    }
+}

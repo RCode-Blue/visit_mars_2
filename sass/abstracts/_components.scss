@@ -1,0 +1,111 @@
+// ----- REUSABLE CODE -----
+
+// Feature Boxes
+.box {
+  flex: 1 1 24rem;
+  margin: 1rem 2rem;
+
+  @include respond(tab-port) {
+    flex: 1 1 24rem;
+    max-width: 40rem;
+  }
+
+  @include respond(phone-land) {
+    flex: 0 1 34rem;
+    max-width: 34rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  &__feat-top {
+    flex-grow: .8;
+
+    border: 1px solid $color-grey-2;
+    border-radius: 5px 5px 0 0;
+    background-color: $color-white;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__feat-bottom {
+    flex-grow: 3;
+
+    border: 1px solid $color-grey-2;
+    border-radius: 0 0 5px 5px;
+    background-color: $color-yellow-1;
+    color: $color-grey-3;
+
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 400;
+
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+  }
+}
+
+// Launch Cards
+.launch-card {
+  color: $color-grey-3;
+  height: 45rem;
+
+  &:hover &__front {
+    display: none;
+  }
+
+  &:hover &__back {
+    display: block;
+  }
+
+
+  &__front {
+    display: block;
+    border: 1px solid $color-grey-2;
+
+    div {
+      height: 6rem;
+      background-color: $color-grey-2;
+
+      font-size: $font-paragraph-size;
+      text-align: center;
+
+    }
+
+    img {
+      width: 100%;
+      height: 39rem;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__back {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 2rem;
+
+    border: 1px solid $color-grey-2;
+    background-color: $color-yellow-1;
+
+    font-size: $font-paragraph-size;
+
+    p {
+      &:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
